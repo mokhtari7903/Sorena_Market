@@ -1,0 +1,111 @@
+@import "../../../../../../assets/style/variables/mixin.scss";
+@import "../../../../../../assets/style/variables/variable.scss";
+
+body{
+    position: relative;
+}
+.container{
+    @include flexRow(center, center);
+    
+    &::before{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        content: "";
+        background-color: hsla(178, 94%, 6%, 0.3);
+        z-index: 1;
+    }
+    .form{
+        position:absolute;
+        top:50px;
+        left: 400px ;
+        @include flexCol(center, start ,5px);
+        margin: 0px 20px;
+        padding: 50px 20px 20px 20px;
+        background-color: #57114f;
+        width: 500px;
+        box-shadow: -4px 4px 10px 5px rgb(194, 194, 194);
+        border-radius: 25px;
+        z-index: 2;
+        p{
+           font-size: 25px;
+            // border-radius: 20px;
+            margin: 0px 20px 20px 20px;
+            border-bottom: 1px solid red;
+            color: rgb(253, 251, 251);
+            // box-shadow: 0 3px 5px 0px rgb(188, 0, 125);
+           
+        }
+        .input{
+            // border:1px solid #8d8c8c;
+            border: none;
+            outline:none; 
+            align-self: center;
+            width: 80%;
+            padding: 8px 15px;
+            background-color: white;
+            border-radius: 20px;
+            &:focus{
+                transform: scale(1.02);
+                box-shadow: 0 0 12px 0 rgb(220, 218, 218);
+           }
+           &::placeholder{
+            font-family: $fontFamily;
+            font-size: 18px;
+           }
+        }
+        label{
+            background-color: black;
+            border-radius: 20px;
+            padding: 3px 6px;
+            color: rgb(249, 73, 73);
+            box-shadow: 3px 3px 8px 0px rgb(188, 0, 125);
+           
+        }
+        .btn{
+            align-self: center;
+            width: 100px;
+            border: 1px solid gray;
+            padding: 4px 5px;
+            margin: 25px 2px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 20px;
+            &:hover{
+                @include btn;
+                border-radius: 20px;
+                
+                color: #f90905;
+                background-image:linear-gradient(#74ecfc,#039ef8);
+
+            }
+        }
+    
+    }
+    .back{
+        width: 25px;
+        height: 25px;
+        top: 8px;
+        left: 8px;
+        position: absolute;
+        margin:5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        background-color: crimson;
+        border-radius: 50%;
+        opacity: 0.8;
+        // box-shadow: 0 0 5px 1px rgb(0, 213, 255);
+        cursor: pointer;
+        &:hover{
+            // box-shadow: 0 0 5px 1px rgb(255, 213, 0);
+            transform: scale(1.2);
+        }
+    }
+}
+
+

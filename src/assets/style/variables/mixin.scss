@@ -1,0 +1,79 @@
+@mixin flexCol($justy:start, $align:center,$gap:1px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justy;
+    align-items: $align;
+    gap:$gap;
+    
+}
+@mixin flexRow($justy:start, $align:center, $gap:1px) {
+    display: flex;   
+    justify-content: $justy;
+    align-items: $align;
+    gap: $gap;
+    
+}
+@mixin flex( $gap:1px) {
+    display: flex;
+    gap: $gap;
+    
+}
+
+
+@mixin btn($color:#221b1b, $bgColor:#cfcfcf,$w:100px, $p:5px 10px) {
+    width: $w ;
+    padding: $p ;
+    border: none;
+    border-radius: 10px;
+    color:$color;
+    background-color: $bgColor;
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 8px 0px rgb(200, 200, 200);
+    }
+        
+
+}
+@mixin btn-w($w:100px) {
+    width: $w ;
+    padding:5px 10px;
+    border: none;
+    border-radius: 10px;
+    color:#221b1b;
+    background-color:#cfcfcf ;
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 8px 0px rgb(200, 200, 200);
+    }
+        
+
+}
+@mixin btn-p($p:5px 10px) {
+    width: 100px ;
+    padding:$p;
+    border: none;
+    border-radius: 10px;
+    color:#221b1b;
+    background-color:#cfcfcf ;
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 8px 0px rgb(200, 200, 200);
+    }
+        
+
+}
+@mixin btn-c($color:#221b1b) {
+    width: 100px ;
+    padding:5px 10px;
+    border: none;
+    border-radius: 10px;
+    color:$color;
+    background-color:#cfcfcf ;
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 8px 0px rgb(200, 200, 200);
+    }
+        
+
+}
+

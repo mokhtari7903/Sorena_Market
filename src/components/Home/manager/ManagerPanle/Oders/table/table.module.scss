@@ -1,0 +1,68 @@
+@import "../../../../../../assets/style/variables/mixin.scss";
+@import "../../../../../../assets/style/variables/variable.scss";
+
+
+
+.table{
+    @include flexCol;
+    table{
+        
+        background-color: aliceblue;
+        td, th{
+            border-bottom: 1px solid rgb(207, 198, 198);
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 1px 8px 0px rgb(229, 229, 229);
+            border-radius: 7px;
+            padding: 5px 30px;
+            img{
+                width: 100px;
+                border-radius: 10px;
+            }
+            select{
+                outline: none;
+                border: none;
+                background-color: antiquewhite;
+                border-radius: 10px;
+            }
+            &:hover{
+                box-shadow: 0 1px 8px 0px rgb(251, 155, 155);
+
+            }
+    
+        }
+        .btnEdit{
+            color: rgb(83, 21, 0);
+            background-color: rgb(217, 255, 0);
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            box-shadow: 0 0 8px 1px gray;
+        }
+        .btnDelete{
+            color: rgb(253, 246, 244);
+            background-color: rgb(255, 64, 6);
+            border-radius: 10px;
+            border: none;
+            padding: 5px 10px;
+            box-shadow: 0 0 8px 1px gray;
+        }
+    
+    }   
+    .active{
+        color: red;
+        transform: scale(1.1);
+
+    }
+    .btnPage{
+        border: none;
+        box-shadow: 0 2px 10px 0px gray;
+        padding: 5px 10px;
+        margin: 7px;
+        background-color: #76ccfb;
+        border-radius: 5px;
+        &:focus{
+            background-color: #2db2fa;
+        }
+
+    } 
+}

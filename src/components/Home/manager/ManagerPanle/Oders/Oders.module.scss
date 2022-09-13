@@ -1,0 +1,15 @@
+@import "../../../../../assets/style/variables/mixin.scss";
+@import "../../../../../assets/style/variables/variable.scss";
+
+.radioForm{
+ @include flexRow(center);
+ div{
+    background-color: aqua;
+ }
+ form{
+    width: 400px;
+    margin: 10px 50px;
+    @include flexRow(space-between);
+
+ }
+}

@@ -1,0 +1,21 @@
+@import "../../../../assets/style/variables/mixin.scss";
+@import "../../../../assets/style/variables/variable.scss";
+
+.links{
+    @include flexRow(center);
+    .link{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 1px 10px;
+        margin: 5px;
+        border-radius: 20px;
+       
+    }
+    .active{
+        color: red;
+        box-shadow: -1px 3px 8px 1px rgb(159, 159, 159);
+        
+    }
+}
+

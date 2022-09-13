@@ -1,0 +1,26 @@
+// color:
+
+$primery: #631ee4;
+$info:#0083a3;
+$secondary:#cacaca;
+$black:#2a2a2a;
+
+
+
+//icon size:
+
+$iconSize-1:15px;
+$iconSize-2:25px;
+$iconSize-3:35px;
+// image size:
+$imgSize-1:40px;
+$imgSize-2:50px;
+$imgSize-1:60px;
+// font:
+//  fontfamily:
+$fontFamily:persianFont;
+
+@font-face {
+    font-family: persianFont;
+    src: url("../../style/font/BMitra.ttf");
+}

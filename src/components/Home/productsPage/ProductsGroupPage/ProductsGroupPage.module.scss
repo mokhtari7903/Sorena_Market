@@ -1,0 +1,43 @@
+@import "../../../../assets/style/variables/mixin.scss";
+@import "../../../../assets/style/variables/variable.scss";
+
+.container{
+    width: 100%;
+    
+    display: flex;
+    flex-flow:row wrap;
+    
+    gap: 30px;
+    overflow-x:auto ;
+    &::-webkit-scrollbar{
+        display: none;
+        
+    }
+    
+}
+
+.card{
+    max-width: 300px;
+    font-size: 14px;
+    @include flexCol(center);
+    background-color: rgb(254, 253, 253);
+    border-radius: 5px 40px;
+    padding:0;
+    box-shadow: 0 2px 12px 1px rgb(232, 232, 232);
+    cursor: pointer;
+    p{
+        font-size: 30px;
+    }
+    &:hover{
+        box-shadow: 0 2px 8px 1px rgb(252, 184, 184);
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+    div{
+        padding: 2px 6px;
+    }
+    img{
+        width:100%;
+        border-radius: 5px 40px 0 0;
+    }
+}

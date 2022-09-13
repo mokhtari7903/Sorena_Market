@@ -1,0 +1,19 @@
+@import "../../../../../../assets/style/variables/mixin.scss";
+@import "../../../../../../assets/style/variables/variable.scss";
+body{
+    position: relative;
+}
+.modal{
+    @include flexRow(center, center);
+    
+    &::before{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        content: "";
+        background-color: hsla(178, 94%, 6%, 0.3);
+        z-index: 1;
+    }
+}
